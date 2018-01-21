@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <style type="text/css">
+        .error{
+            color:red;
+        }
+        .success{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <p align = center>
+        <a href = "./recipes">Recipe List</a>
+        <a href = "./new_recipe">Add Recipes</a>
+        <a href = "./add_ingredient">Add Ingredients</a>
+    </p>
+
+    <hr />
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% for item in recipe_list %}
+
+    <a href = './recipes?r_id={{item.id}}'>{{item.company}} {{item.name}}</a>
+
+    
+    {% endfor %}
+
+
+
+{% endblock %}
+

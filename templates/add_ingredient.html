@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Add Ingredient</h1>
+<form method='post' id = 'ing_form'> 
+    <label> 
+        Item:
+        <input type='text' name='name' value='{{name_ph}}' />
+    </label>
+    <label>
+        Price:
+        <input type='text' name='price' value='{{price_ph}}' />
+    </label>
+    
+    <br>
+    <input type='submit' value='Submit' />
+</form>
+<p class = 'error'> {{error_text}} </p>
+<p class = 'success'> {{sucess_text}} </p>
+<hr/>
+
+
+
+{% endblock %}
